@@ -1,28 +1,63 @@
-Instructions:
-In this assignment, you will work on improving the quality of a provided codebase through static analysis and code review. The main objective is to identify and address code quality issues, potential bugs, and adherence to coding standards using a static analysis tool. You will document the issues you discover and describe how you fixed them.
+# Shopping Cart — CI Quality Assurance
 
-Codebase:
-You can find a simple Python codebase that calculates and displays the total price of items in a shopping cart on this repository: https://github.com/shoklah/ELU_SE_W31. The codebase consists of a single Python script named `shopping_cart.py`. However, this script contains several issues related to code quality, potential bugs, and adherence to coding standards.
+![CI](https://github.com/Cukowski/ELU_SE_W31/actions/workflows/ci.yml/badge.svg)
 
-Tasks:
+This project calculates and displays the total price of items in a shopping cart.  
+It includes **static analysis**, **unit tests**, and a **GitHub Actions CI pipeline** to maintain high code quality.
 
-1. Static Analysis:
-   - Choose a Python static analysis tool (e.g., `pylint`, `flake8`, `bandit`).
-   - Run the chosen tool on the `shopping_cart.py` script to identify and document code quality issues, potential bugs, and deviations from coding standards.
 
-2. Issue Resolution:
-   - Fix the issues identified by the static analysis tool in the codebase.
-   - Commit your changes with meaningful commit messages describing each fix.
+## Features
 
-3. Code Review:
-   - Review the fixed code to ensure that the identified issues have been adequately addressed.
-   - If you find any additional issues during your review, repeat the process of fixing and committing.
+- Clean and modular Python code
+- Automated testing using `unittest`
+- Static analysis tools integrated:
+  - `flake8` — PEP8 linter
+  - `pylint` — Code quality checker
+  - `bandit` — Security analyzer
+- GitHub Actions CI pipeline triggered on every push
 
-Submission Guidelines:
 
-1. Fork the provided GitHub repository and clone it to your local machine.
-2. Choose and run a static analysis tool on the `shopping_cart.py` script.
-3. Fix the identified issues.
-4. Commit your changes with clear commit messages.
-5. If needed, repeat the issue resolution process after your review.
-6. Provide the link to your public forked repository with the fixed code.
+## Project Structure
+
+- `shopping_cart.py` — core logic
+- `test_shopping_cart.py` — unit tests
+- `.github/workflows/ci.yml` — GitHub Actions workflow file
+
+
+## How to Run
+
+**Run the main script:**
+```bash
+python shopping_cart.py
+```
+
+**Run the tests:**
+
+```bash
+python test_shopping_cart.py
+```
+
+
+## GitHub Actions Setup
+
+To manually create the workflow structure:
+
+```bash
+mkdir -p .github/workflows
+touch .github/workflows/ci.yml
+```
+
+The `ci.yml` should be configured to run static analysis and tests.
+
+
+## Fork & Attribution
+
+Forked and improved from:
+[shoklah/ELU\_SE\_W31](https://github.com/shoklah/ELU_SE_W31)
+
+
+**Note:** If you fork or rename the repo, update the badge URL below:
+
+```md
+https://github.com/YOUR_USERNAME/YOUR_REPO/actions/workflows/ci.yml/badge.svg
+```
