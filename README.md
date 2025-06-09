@@ -1,5 +1,5 @@
 # Shopping Cart - CI Quality Assurance
-
+GitHub Actions badge: 
 ![CI](https://github.com/Cukowski/ELU_SE_W31/actions/workflows/ci.yml/badge.svg)
 
 This project calculates and displays the total price of items in a shopping cart.  
