@@ -1,4 +1,4 @@
-# Shopping Cart — CI Quality Assurance
+# Shopping Cart - CI Quality Assurance
 
 ![CI](https://github.com/Cukowski/ELU_SE_W31/actions/workflows/ci.yml/badge.svg)
 

@@ -7,8 +7,10 @@ def calculate_total(cart):
             print(f"Warning: Invalid item format: {item}")
     return total
 
+
 def display_total(total):
     print(f"Total price: ${total:.2f}")
+
 
 if __name__ == "__main__":
     cart = [
